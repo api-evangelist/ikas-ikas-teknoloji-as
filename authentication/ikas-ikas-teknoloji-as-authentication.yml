@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/api/getting-started/authentication
+docs: https://ikas.dev/docs/api/getting-started/authentication
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials, authorizationCode]
+  token_style: bearer
+  token_ttl_seconds: 14400
+schemes:
+- name: OAuth2
+  type: oauth2
+  description: >-
+    ikas apps authenticate with OAuth 2.0. Private (store-specific) apps use the
+    client_credentials flow; public admin apps use the authorization_code flow.
+    Access tokens are sent as an HTTP Bearer token on GraphQL requests and
+    expire after 14400 seconds (4 hours).
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://{store_name}.myikas.com/api/admin/oauth/token
+    used_by: private apps
+    request:
+      content_type: application/x-www-form-urlencoded
+      params: [grant_type=client_credentials, client_id, client_secret]
+    response_fields: [access_token, token_type, expires_in]
+  - flow: authorizationCode
+    used_by: public admin apps
+    docs: https://builders.ikas.com/docs/app-development
+  scopes_ref: scopes/ikas-ikas-teknoloji-as-scopes.yml
+api_request:
+  endpoint: https://api.myikas.com/api/v1/admin/graphql
+  header: 'Authorization: Bearer <access_token>'
