@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/intro
+versioning:
+  scheme: uri-path
+  current: v1
+  endpoint: https://api.myikas.com/api/v1/admin/graphql
+  docs: https://ikas.dev/docs/intro
+deprecation:
+  note: >-
+    ikas recommends new users adopt the v2 developer platform. The v1 GraphQL
+    Admin API documented here remains available, while new app development is
+    steered toward the v2 builders platform.
+  successor: v2
+  successor_docs: https://builders.ikas.com/docs/app-development
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+deprecated_operations: []

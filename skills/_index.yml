@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: generated
+source: https://ikas.dev/docs/api/admin-api (GraphQL queries/mutations)
+api: https://api.myikas.com/api/v1/admin/graphql
+skills:
+- file: ikas-ikas-teknoloji-as-product-catalog-sync.md
+  name: Sync the product catalog
+  api: https://api.myikas.com/api/v1/admin/graphql
+  operations: [listProduct, searchProducts, saveProduct, saveVariantPrices, saveProductStockLocations]
+- file: ikas-ikas-teknoloji-as-order-fulfillment.md
+  name: Process and fulfill orders
+  api: https://api.myikas.com/api/v1/admin/graphql
+  operations: [listOrder, createOrderWithTransactions, fulfillOrder, refundOrderLine, updateOrderLine]
+- file: ikas-ikas-teknoloji-as-webhook-subscriptions.md
+  name: Manage webhook subscriptions
+  api: https://api.myikas.com/api/v1/admin/graphql
+  operations: [listWebhook, saveWebhook, deleteWebhook]

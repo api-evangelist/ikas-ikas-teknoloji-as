@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: ikas.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 13 09:57:49 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+- host: ikas.dev
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  9 06:32:49 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+- host: api.myikas.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 09:10:14 2026 GMT
+  hsts: null
+domains:
+- domain: ikas.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: ikas.dev
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

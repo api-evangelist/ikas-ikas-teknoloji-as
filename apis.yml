@@ -1,8 +1,18 @@
 aid: ikas-ikas-teknoloji-as
 name: Ikas, IKAS Teknoloji AS
-description: Ikas, IKAS Teknoloji AS is a company surfaced as a portfolio company of 500-global and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  ikas (IKAS Teknoloji AS) is an all-in-one e-commerce platform, headquartered
+  in Turkey and backed by 500 Global, that lets merchants build online stores,
+  manage products, inventory, orders, customers, and campaigns, and sell across
+  multiple sales channels. For developers and partners, ikas exposes a public
+  GraphQL Admin API at api.myikas.com that covers products, variants, orders,
+  transactions, customers, price lists, campaigns, coupons, stock locations,
+  sales channels, storefronts, and webhooks. Apps authenticate with OAuth 2.0
+  (client_credentials for private/store apps and authorization_code for public
+  admin apps) using scoped permissions such as read_products/write_products and
+  read_orders/write_orders. ikas also ships a TypeScript SDK, an ikas CLI, an
+  App Bridge for embedded dashboard apps, a theme development kit, and an
+  official MCP server for its code components.
 url: https://raw.githubusercontent.com/api-evangelist/ikas-ikas-teknoloji-as/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,68 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://ikas.dev/img/logo.svg
 tags:
 - Company
-apis: []
+- E-commerce
+- Retail
+- Storefront
+- Orders
+- Products
+- Inventory
+- GraphQL
+- Webhooks
+- OAuth
+- SDK
+- MCP
+apis:
+- name: ikas Admin API
+  description: >-
+    Public GraphQL Admin API for ikas stores — read and write products,
+    variants, orders, transactions, customers, price lists, campaigns, coupons,
+    stock locations, sales channels, storefronts, and webhooks. 51 queries and
+    55 mutations, authenticated with OAuth 2.0 (client_credentials for private
+    apps, authorization_code for public admin apps) and Bearer access tokens.
+  humanURL: https://ikas.dev/docs/intro
+  baseURL: https://api.myikas.com/api/v1/admin/graphql
+  tags:
+  - GraphQL
+  - E-commerce
+  - Orders
+  - Products
+  - Customers
+  properties:
+  - type: GraphQL
+    url: https://api.myikas.com/api/v1/admin/graphql
+  - type: APIReference
+    url: https://ikas.dev/docs/api/admin-api/products
+  - type: Authentication
+    url: authentication/ikas-ikas-teknoloji-as-authentication.yml
+  - type: OAuthScopes
+    url: scopes/ikas-ikas-teknoloji-as-scopes.yml
+  - type: Webhooks
+    url: asyncapi/ikas-ikas-teknoloji-as-webhooks.yml
+  - type: Conventions
+    url: conventions/ikas-ikas-teknoloji-as-conventions.yml
+  - type: ErrorCatalog
+    url: errors/ikas-ikas-teknoloji-as-problem-types.yml
+  - type: DataModel
+    url: data-model/ikas-ikas-teknoloji-as-data-model.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +90,56 @@ maintainers:
 common:
 - type: Website
   url: https://ikas.com
+- type: DeveloperPortal
+  url: https://ikas.dev
+- type: Documentation
+  url: https://ikas.dev/docs/intro
+- type: GettingStarted
+  url: https://ikas.dev/docs/api/getting-started/authentication
+- type: Sandbox
+  url: https://ikas.dev/playground
+- type: Pricing
+  url: https://ikas.com/pricing
+- type: GitHubOrganization
+  url: https://github.com/ikascom
+- type: Authentication
+  url: authentication/ikas-ikas-teknoloji-as-authentication.yml
+- type: OAuthScopes
+  url: scopes/ikas-ikas-teknoloji-as-scopes.yml
+- type: Conventions
+  url: conventions/ikas-ikas-teknoloji-as-conventions.yml
+- type: Lifecycle
+  url: lifecycle/ikas-ikas-teknoloji-as-lifecycle.yml
+- type: Deprecation
+  url: https://builders.ikas.com/docs/app-development
+- type: Webhooks
+  url: asyncapi/ikas-ikas-teknoloji-as-webhooks.yml
+- type: MCPServer
+  url: mcp/ikas-ikas-teknoloji-as-mcp.yml
+- type: Packages
+  url: packages/ikas-ikas-teknoloji-as-packages.yml
+- type: SDKs
+  url: packages/ikas-ikas-teknoloji-as-packages.yml
+- type: CLI
+  url: cli/ikas-ikas-teknoloji-as-cli.yml
+- type: Components
+  url: components/ikas-ikas-teknoloji-as-components.yml
+- type: Conformance
+  url: conformance/ikas-ikas-teknoloji-as-conformance.yml
+- type: DomainSecurity
+  url: security/ikas-ikas-teknoloji-as-domain-security.yml
+- type: WellKnown
+  url: well-known/ikas-ikas-teknoloji-as-well-known.yml
+- type: DataModel
+  url: data-model/ikas-ikas-teknoloji-as-data-model.yml
+- type: ErrorCatalog
+  url: errors/ikas-ikas-teknoloji-as-problem-types.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/ikas-ikas-teknoloji-as-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

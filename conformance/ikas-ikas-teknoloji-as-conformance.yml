@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: derived
+source: https://ikas.dev/docs/api/getting-started/authentication
+standards:
+- id: graphql
+  conforms: true
+  evidence: Admin API is a GraphQL API at api.myikas.com/api/v1/admin/graphql
+- id: oauth2
+  conforms: true
+  evidence: >-
+    OAuth 2.0 with client_credentials (private apps) and authorization_code
+    (public admin apps) flows; Bearer access tokens
+- id: oauth2-client-credentials
+  conforms: true
+  evidence: client_credentials token endpoint documented for private apps
+- id: webhooks
+  conforms: true
+  evidence: saveWebhook mutation with store/<resource>/<event> scopes
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: GraphQL errors array is used, not RFC 9457 problem+json
+- id: oidc
+  conforms: false
+- id: rest
+  conforms: false
+  evidence: API surface is GraphQL, not REST

@@ -1,0 +1,64 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/ikas
+packages:
+- language: javascript
+  registry: npm
+  name: "@ikas/api-client"
+  url: https://www.npmjs.com/package/@ikas/api-client
+  install: npm install @ikas/api-client
+  version: 2.0.1
+  description: ikas public node api client for store apps and private apps
+  official: true
+- language: javascript
+  registry: npm
+  name: "@ikas/admin-api-client"
+  url: https://www.npmjs.com/package/@ikas/admin-api-client
+  install: npm install @ikas/admin-api-client
+  version: 2.1.0
+  description: ikas public node api client for store apps and private apps
+  official: true
+- language: javascript
+  registry: npm
+  name: "@ikas/app-helpers"
+  url: https://www.npmjs.com/package/@ikas/app-helpers
+  install: npm install @ikas/app-helpers
+  version: 1.0.10
+  description: ikas store app helpers
+  official: true
+- language: javascript
+  registry: npm
+  name: ikas
+  url: https://www.npmjs.com/package/ikas
+  install: npm install -g ikas
+  version: 0.0.27
+  description: ikas CLI entry point (binary "ikas")
+  official: true
+  kind: cli
+- language: javascript
+  registry: npm
+  name: "@ikas/code-components-mcp"
+  url: https://www.npmjs.com/package/@ikas/code-components-mcp
+  install: npx -y @ikas/code-components-mcp
+  version: 2.6.1
+  description: MCP server for ikas code components documentation (binary "ikas-mcp")
+  official: true
+  kind: mcp
+- language: javascript
+  registry: npm
+  name: "@ikas/component-cli"
+  url: https://www.npmjs.com/package/@ikas/component-cli
+  install: npm install -g @ikas/component-cli
+  description: ikas code component CLI
+  official: true
+- language: javascript
+  registry: npm
+  name: create-ikas-component
+  url: https://www.npmjs.com/package/create-ikas-component
+  install: npm create ikas-component
+  description: Scaffolder for ikas code components
+  official: true
+notes: >-
+  First-party ikas npm scope also publishes a family of @ikas/storefront-*
+  packages for theme/storefront development. Third-party integrations such as
+  n8n-nodes-ikas exist but are not first-party and are excluded.

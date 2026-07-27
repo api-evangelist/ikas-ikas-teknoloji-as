@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/api/getting-started/authentication
+docs: https://ikas.dev/docs/intro
+api_style: graphql
+endpoint: https://api.myikas.com/api/v1/admin/graphql
+transport:
+  protocol: GraphQL over HTTPS POST
+  content_type: application/json
+authentication:
+  style: oauth2-bearer
+  detail: authentication/ikas-ikas-teknoloji-as-authentication.yml
+pagination:
+  style: page-based
+  note: >-
+    GraphQL list queries (list-product, list-order, list-customer, etc.) accept
+    pagination and filter arguments and return a paginated connection with the
+    data plus page metadata. Confirm exact argument names in the per-query
+    reference on ikas.dev.
+error_handling:
+  style: graphql-errors
+  note: >-
+    Errors are returned in the GraphQL top-level "errors" array rather than via
+    HTTP status codes; a 200 response can still carry errors. See
+    errors/ikas-ikas-teknoloji-as-problem-types.yml.
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header/parameter is documented. Mutations follow
+    save/create/update/delete GraphQL semantics.
+webhooks:
+  supported: true
+  detail: asyncapi/ikas-ikas-teknoloji-as-webhooks.yml
+  retry: >-
+    If the endpoint is unreachable or returns any status other than HTTP 200,
+    ikas retries 3 times then stops sending the webhook.
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: lifecycle/ikas-ikas-teknoloji-as-lifecycle.yml
+scopes:
+  detail: scopes/ikas-ikas-teknoloji-as-scopes.yml

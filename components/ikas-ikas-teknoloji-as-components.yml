@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://builders.ikas.com/docs/app-development
+families:
+- family: App Bridge
+  kind: embedded-app-bridge
+  description: >-
+    ikas App Bridge facilitates secure communication between iframe
+    applications and the ikas Admin Panel, letting embedded partner apps run
+    inside the merchant dashboard.
+- family: Code Components
+  kind: storefront-components
+  description: >-
+    ikas code components are embeddable storefront building blocks scaffolded
+    and developed with the component CLI (create-ikas-component /
+    @ikas/component-cli) and documented via the @ikas/code-components-mcp MCP
+    server.
+  loaders:
+  - "@ikas/component-cli"
+  - create-ikas-component
+- family: Themes / Storefront
+  kind: theme-kit
+  description: >-
+    Theme development kit and @ikas/storefront-* package family for building
+    fast custom storefronts.
+  docs: https://ikas.dev/docs/theme/getting-started/introduction
+notes: >-
+  Distinct from the server-side Admin API SDKs in
+  packages/ikas-ikas-teknoloji-as-packages.yml. Component families captured from
+  the builders app-development docs and the first-party npm scope.

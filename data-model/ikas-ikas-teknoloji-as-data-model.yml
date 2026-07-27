@@ -1,0 +1,66 @@
+generated: '2026-07-19'
+method: derived
+source: https://ikas.dev/docs/api/admin-api (GraphQL type-definitions/objects)
+note: >-
+  Entity graph derived from the ikas Admin API GraphQL object/query/mutation
+  surface (268 object types, 51 queries, 55 mutations). Relationships reflect
+  the resource categories and id-reference fields documented in the admin-api
+  reference; field-level cardinality confirmed where explicit, otherwise implied
+  by the list/save operation shape.
+entities:
+- name: Merchant
+  queries: [me, get-merchant, get-merchant-licence]
+- name: Product
+  queries: [list-product, search-products]
+  mutations: [save-product, bulk-update-products, delete-product-list]
+  relationships:
+  - {type: has_many, target: ProductVariant, via: variants}
+  - {type: has_many, target: ProductAttribute, via: attributes}
+  - {type: belongs_to, target: ProductBrand, via: brand}
+  - {type: has_many, target: Category, via: categories}
+- name: ProductVariant
+  mutations: [save-variant-prices, save-variant-type]
+  relationships:
+  - {type: belongs_to, target: Product, via: productId}
+  - {type: has_many, target: StockLocation, via: stocks}
+- name: Category
+  queries: [list-category]
+  mutations: [save-category, delete-category-list]
+- name: Order
+  queries: [list-order, list-order-transactions]
+  mutations: [create-order-with-transactions, fulfill-order, cancel-order-line, refund-order-line, update-order-addresses, update-order-line]
+  relationships:
+  - {type: belongs_to, target: Customer, via: customer}
+  - {type: has_many, target: OrderLineItem, via: orderLineItems}
+  - {type: has_many, target: OrderTransaction, via: transactions}
+  - {type: has_many, target: OrderTag, via: tags}
+- name: OrderTransaction
+  mutations: [approve-pending-order-transactions]
+  relationships:
+  - {type: belongs_to, target: Order, via: orderId}
+- name: Customer
+  queries: [list-customer, list-customer-attribute]
+  relationships:
+  - {type: has_many, target: Order, via: orders}
+- name: Campaign
+  queries: [list-campaign]
+  mutations: [save-campaign, campaign-add-coupons, delete-campaign-list]
+  relationships:
+  - {type: has_many, target: Coupon, via: coupons}
+- name: Coupon
+  queries: [list-coupon]
+  mutations: [delete-coupon-list]
+- name: PriceList
+  queries: [list-price-list]
+- name: StockLocation
+  queries: [list-stock-location, list-product-stock-location]
+  mutations: [save-product-stock-locations]
+- name: SalesChannel
+  queries: [list-sales-channel, get-sales-channel]
+  mutations: [save-sales-channel, update-product-sales-channel-status]
+- name: Storefront
+  queries: [list-storefront, list-storefront-jsscript]
+  mutations: [save-storefront-jsscript, delete-storefront-jsscript]
+- name: Webhook
+  queries: [list-webhook]
+  mutations: [save-webhook, delete-webhook]

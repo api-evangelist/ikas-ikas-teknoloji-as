@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/api/admin-api/webhooks
+spec_type: Webhooks
+summary: >-
+  ikas delivers store events via webhooks registered with the saveWebhook
+  GraphQL mutation. Each subscription binds one or more scope strings of the
+  form store/<resource>/<event> to an HTTPS endpoint. Deliveries are retried up
+  to 3 times if the endpoint does not return HTTP 200, then dropped.
+registration:
+  mutation: saveWebhook
+  signature: 'saveWebhook(input: WebhookInput!): [Webhook!]'
+  input_fields:
+  - scopes
+  - endpoint
+  deregister_mutation: deleteWebhook
+  list_query: list-webhook
+delivery:
+  transport: HTTPS POST
+  success_status: 200
+  retry: retried 3 times on non-200 or unreachable endpoint, then stopped
+scope_pattern: store/<resource>/<event>
+documented_scopes:
+- store/customer/created
+- store/customer/updated
+notes: >-
+  The docs list customer created/updated as examples of the scope pattern; the
+  full published scope catalog is not enumerated on the webhooks page. Only the
+  verbatim documented scopes are recorded here — additional resource/event
+  scopes exist but are not fabricated.

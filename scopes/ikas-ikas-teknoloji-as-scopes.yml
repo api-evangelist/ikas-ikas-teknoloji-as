@@ -1,0 +1,41 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/intro
+docs: https://ikas.dev/docs/intro
+schemes:
+- name: OAuth2
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://{store_name}.myikas.com/api/admin/oauth/token
+  - flow: authorizationCode
+scopes:
+- scope: read_products
+  description: View products
+  flows: [clientCredentials, authorizationCode]
+- scope: write_products
+  description: Manage products
+  flows: [clientCredentials, authorizationCode]
+- scope: read_orders
+  description: View orders
+  flows: [clientCredentials, authorizationCode]
+- scope: write_orders
+  description: Manage orders
+  flows: [clientCredentials, authorizationCode]
+- scope: read_customers
+  description: View customers
+  flows: [clientCredentials, authorizationCode]
+- scope: write_customers
+  description: Manage customers
+  flows: [clientCredentials, authorizationCode]
+- scope: read_campaigns
+  description: View campaigns
+  flows: [clientCredentials, authorizationCode]
+- scope: write_campaigns
+  description: Manage campaigns
+  flows: [clientCredentials, authorizationCode]
+- scope: read_inventories
+  description: View inventory levels
+  flows: [clientCredentials, authorizationCode]
+- scope: write_inventories
+  description: Manage inventory levels
+  flows: [clientCredentials, authorizationCode]

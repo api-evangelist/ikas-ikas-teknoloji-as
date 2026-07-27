@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://builders.ikas.com/docs/app-development
+clis:
+- name: ikas CLI
+  package: ikas
+  registry: npm
+  binary: ikas
+  install:
+  - npm install -g ikas
+  - npx ikas
+  purpose: >-
+    Rapid project initialization, local development environment setup, and
+    publishing of ikas apps. Referenced in the ikas builders/app-development
+    docs alongside the TypeScript SDK and App Bridge.
+- name: ikas component CLI
+  package: "@ikas/component-cli"
+  registry: npm
+  install:
+  - npm install -g @ikas/component-cli
+  - npm create ikas-component
+  purpose: Scaffold and develop ikas code components for storefronts.
+notes: >-
+  Command/flag surface is not fully enumerated in the public docs; captured at
+  the tool level from the npm binaries and the app-development guide without
+  inventing subcommands.

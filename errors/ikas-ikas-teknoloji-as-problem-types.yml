@@ -1,0 +1,17 @@
+generated: '2026-07-19'
+method: searched
+source: https://ikas.dev/docs/api/getting-started/authentication
+format: graphql-errors
+envelope:
+  transport: >-
+    GraphQL responses return HTTP 200 with a top-level "errors" array (and/or a
+    partial "data") rather than mapping failures onto HTTP status codes. Clients
+    must inspect the errors array, not just the HTTP status.
+  fields: [errors, data]
+notes: >-
+  ikas does not publish an RFC 9457 problem-details catalog; the Admin API is
+  GraphQL and surfaces failures through the standard GraphQL errors array. OAuth
+  token errors from the /api/admin/oauth/token endpoint follow OAuth 2.0
+  error semantics. No enumerated error-code registry is published on the docs at
+  capture time, so none is fabricated here.
+problems: []
