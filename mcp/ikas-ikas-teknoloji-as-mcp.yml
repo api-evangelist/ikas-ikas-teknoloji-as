@@ -4,24 +4,25 @@ source: https://www.npmjs.com/package/@ikas/code-components-mcp
 status: published
 server:
   name: ikas-code-components-mcp
-  package: "@ikas/code-components-mcp"
+  package: '@ikas/code-components-mcp'
   version: 2.6.1
   bin: ikas-mcp
   transport: stdio
   install: npx -y @ikas/code-components-mcp
-  description: >-
-    Official ikas MCP server for ikas code components documentation. Exposes the
-    ikas storefront/code-components documentation to MCP-compatible agents and
-    coding assistants so they can scaffold and work with ikas components. This
-    is a documentation MCP server, not a wrapper over the Admin GraphQL API.
+  description: Official ikas MCP server for ikas code components documentation. Exposes the ikas storefront/code-components
+    documentation to MCP-compatible agents and coding assistants so they can scaffold and work with ikas
+    components. This is a documentation MCP server, not a wrapper over the Admin GraphQL API.
   scope: code components / storefront documentation
 related_packages:
-- "@ikas/component-cli"
+- '@ikas/component-cli'
 - create-ikas-component
 candidate_admin_api_mcp:
   status: candidate
-  note: >-
-    No official MCP server wrapping the Admin GraphQL API was found. A candidate
-    tool surface could be derived from the 51 queries and 55 mutations of the
-    Admin API (e.g. list-product, save-product, list-order,
-    create-order-with-transactions, list-customer, save-webhook).
+  note: No official MCP server wrapping the Admin GraphQL API was found. A candidate tool surface could
+    be derived from the 51 queries and 55 mutations of the Admin API (e.g. list-product, save-product,
+    list-order, create-order-with-transactions, list-customer, save-webhook).
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
