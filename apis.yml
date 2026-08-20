@@ -38,6 +38,19 @@ modified: '2026-07-19'
 image: https://ikas.dev/img/logo.svg
 tags:
 - Company
+- E-Commerce
+- Retail
+- Storefront
+- Order
+- Product
+- Inventory
+- GraphQL
+- Webhook
+- Authentication
+- SDK
+- MCP
+tags_raw:
+- Company
 - E-commerce
 - Retail
 - Storefront
@@ -60,6 +73,12 @@ apis:
   humanURL: https://ikas.dev/docs/intro
   baseURL: https://api.myikas.com/api/v1/admin/graphql
   tags:
+  - GraphQL
+  - E-Commerce
+  - Order
+  - Product
+  - Customers
+  tags_raw:
   - GraphQL
   - E-commerce
   - Orders
