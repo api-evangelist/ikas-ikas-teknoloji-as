@@ -1,18 +1,14 @@
 aid: ikas-ikas-teknoloji-as
-name: Ikas, IKAS Teknoloji AS
-description: >-
-  ikas (IKAS Teknoloji AS) is an all-in-one e-commerce platform, headquartered
-  in Turkey and backed by 500 Global, that lets merchants build online stores,
-  manage products, inventory, orders, customers, and campaigns, and sell across
-  multiple sales channels. For developers and partners, ikas exposes a public
-  GraphQL Admin API at api.myikas.com that covers products, variants, orders,
-  transactions, customers, price lists, campaigns, coupons, stock locations,
-  sales channels, storefronts, and webhooks. Apps authenticate with OAuth 2.0
-  (client_credentials for private/store apps and authorization_code for public
-  admin apps) using scoped permissions such as read_products/write_products and
-  read_orders/write_orders. ikas also ships a TypeScript SDK, an ikas CLI, an
-  App Bridge for embedded dashboard apps, a theme development kit, and an
-  official MCP server for its code components.
+name: Ikas
+description: ikas (IKAS Teknoloji AS) is an all-in-one e-commerce platform, headquartered in Turkey and
+  backed by 500 Global, that lets merchants build online stores, manage products, inventory, orders, customers,
+  and campaigns, and sell across multiple sales channels. For developers and partners, ikas exposes a
+  public GraphQL Admin API at api.myikas.com that covers products, variants, orders, transactions, customers,
+  price lists, campaigns, coupons, stock locations, sales channels, storefronts, and webhooks. Apps authenticate
+  with OAuth 2.0 (client_credentials for private/store apps and authorization_code for public admin apps)
+  using scoped permissions such as read_products/write_products and read_orders/write_orders. ikas also
+  ships a TypeScript SDK, an ikas CLI, an App Bridge for embedded dashboard apps, a theme development
+  kit, and an official MCP server for its code components.
 url: https://raw.githubusercontent.com/api-evangelist/ikas-ikas-teknoloji-as/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -45,7 +41,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-09-15'
 image: https://ikas.dev/img/logo.svg
 tags:
 - Company
@@ -75,12 +71,10 @@ tags_raw:
 - MCP
 apis:
 - name: ikas Admin API
-  description: >-
-    Public GraphQL Admin API for ikas stores — read and write products,
-    variants, orders, transactions, customers, price lists, campaigns, coupons,
-    stock locations, sales channels, storefronts, and webhooks. 51 queries and
-    55 mutations, authenticated with OAuth 2.0 (client_credentials for private
-    apps, authorization_code for public admin apps) and Bearer access tokens.
+  description: Public GraphQL Admin API for ikas stores — read and write products, variants, orders, transactions,
+    customers, price lists, campaigns, coupons, stock locations, sales channels, storefronts, and webhooks.
+    51 queries and 55 mutations, authenticated with OAuth 2.0 (client_credentials for private apps, authorization_code
+    for public admin apps) and Bearer access tokens.
   humanURL: https://ikas.dev/docs/intro
   baseURL: https://api.myikas.com/api/v1/admin/graphql
   tags:
@@ -146,7 +140,10 @@ common:
   url: asyncapi/ikas-ikas-teknoloji-as-webhooks.yml
 - type: X-MCPServerCandidate
   url: mcp/ikas-ikas-teknoloji-as-mcp.yml
-  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate
+    — a tool list derived from the published API contracts, not an existing server. The scorer already
+    read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type
+    surfaces with a server that does not exist.'
 - type: Packages
   url: packages/ikas-ikas-teknoloji-as-packages.yml
 - type: SDKs
@@ -174,3 +171,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-aliases:
+- IKAS Teknoloji AS
