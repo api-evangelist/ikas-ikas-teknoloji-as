@@ -1,0 +1,301 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/ikas/integrations
+checked:
+- https://composio.dev/toolkits/ikas-ikas-teknoloji-as
+- https://monid.ai/tools/ikas-ikas-teknoloji-as
+- https://n8n.io/integrations/ikas-ikas-teknoloji-as/
+- https://zapier.com/apps/ikas-ikas-teknoloji-as/integrations
+- https://zapier.com/apps/ikas/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: ikas
+  url: https://zapier.com/apps/ikas/integrations
+  external_url: https://ikas.com/
+  partner_tier: BRONZE
+  triggers:
+  - key: new_customer
+    label: New Customer
+  - key: new_order
+    label: New Order
+  - key: new_product
+    label: New Product
+  - key: updated_order
+    label: Updated Order
+  actions: []
+  searches: []
+edges:
+- partner_name: Netgsm
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/netgsm
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://netgsm.com.tr/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: MailGraf
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/mailgraf
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://mailgraf.com/
+- partner_name: ClickUp
+  partner: clickup
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/clickup
+  direction: third-party
+  category: Project Management
+  partner_url: https://clickup.com/zapier
+- partner_name: Discord
+  partner: discord
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/discord
+  direction: third-party
+  category: Team Chat
+  partner_url: https://discordapp.com/
+- partner_name: Google Drive
+  partner: google-drive
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/google-drive
+  direction: third-party
+  category: File Management & Storage
+  partner_url: https://www.google.com/drive/
+- partner_name: Klaviyo
+  partner: klaviyo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/klaviyo
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.klaviyo.com/
+- partner_name: Kommo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/kommo
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.kommo.com/integrations/zapier/?utm_source=&utm_campaign=integration&utm_medium=referral&utm_content=zapier
+- partner_name: Popupsmart
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/popupsmart
+  direction: third-party
+  category: eCommerce
+  partner_url: https://popupsmart.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Microsoft Excel
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/excel
+  direction: third-party
+  category: Microsoft
+  partner_url: https://zapier.com/office.com
+- partner_name: Google AI Studio (Gemini)
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/google-ai-studio
+  direction: third-party
+  category: AI Models
+  partner_url: https://developers.generativeai.google/products/makersuite
+- partner_name: Trustpilot
+  partner: trustpilot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/trustpilot
+  direction: third-party
+  category: Reviews
+  partner_url: https://marketing.trustpilot.com/partner-success?utm_source=zapier&utm_medium=partner&utm_campaign=partner_partner-tracked-link_requestdemo_all_0519&partner_id=0010N0000473yhtQAA
+- partner_name: Odoo CRM
+  partner: odoo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/odoo
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.odoo.com/
+- partner_name: Hotjar
+  partner: hotjar
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/hotjar
+  direction: third-party
+  category: Analytics
+  partner_url: https://hotjar.com/
+- partner_name: WP All Export Pro
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/wp-all-export-pro
+  direction: third-party
+  category: Website Builders
+  partner_url: http://wpallimport.com/
+- partner_name: Katana
+  partner: katana
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/katana-mrp
+  direction: third-party
+  category: eCommerce
+  partner_url: https://katanamrp.com/
+- partner_name: Karlia
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/karlia
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://karlia.fr/
+- partner_name: WATS
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/wats
+  direction: third-party
+  category: Analytics
+  partner_url: https://wats.com/
+templates:
+- title: Add new ikas customers to Google Ads contact list
+  url: https://zapier.com/apps/google-ads/integrations/ikas/1621388/add-new-ikas-customers-to-google-ads-contact-list
+  apps:
+  - ikas
+  - google-ads
+- title: Send Slack notifications when new ikas orders are created
+  url: https://zapier.com/apps/ikas/integrations/slack/625471/send-slack-notifications-when-new-ikas-orders-are-created
+  apps:
+  - ikas
+  - slack
+- title: Create Discord channel messages for new ikas orders to streamline notifications
+  url: https://zapier.com/apps/discord/integrations/ikas/1280610/create-discord-channel-messages-for-new-ikas-orders-to-streamline-notifications
+  apps:
+  - ikas
+  - discord
+- title: Send outbound emails for new ikas orders with Email by Zapier
+  url: https://zapier.com/apps/email/integrations/ikas/1287738/send-outbound-emails-for-new-ikas-orders-with-email-by-zapier
+  apps:
+  - ikas
+  - email
+- title: Send sms notifications for new products in ikas using Netgsm
+  url: https://zapier.com/apps/ikas/integrations/netgsm/1308077/send-sms-notifications-for-new-products-in-ikas-using-netgsm
+  apps:
+  - ikas
+  - netgsm
+- title: Add new ikas customers as Mailchimp subscribers
+  url: https://zapier.com/apps/ikas/integrations/mailchimp/1392474/add-new-ikas-customers-as-mailchimp-subscribers
+  apps:
+  - ikas
+  - mailchimp
+- title: Create new Shipday orders from new ikas orders
+  url: https://zapier.com/apps/ikas/integrations/shipday/1585809/create-new-shipday-orders-from-new-ikas-orders
+  apps:
+  - ikas
+  - shipday
+- title: Create events in Google Calendar for every new order in ikas
+  url: https://zapier.com/apps/google-calendar/integrations/ikas/1626649/create-events-in-google-calendar-for-every-new-order-in-ikas
+  apps:
+  - ikas
+  - google-calendar
+- title: Create Google Sheets rows for new ikas customers
+  url: https://zapier.com/apps/google-sheets/integrations/ikas/1627338/create-google-sheets-rows-for-new-ikas-customers
+  apps:
+  - ikas
+  - google-sheets
+- title: Create new Google Sheets rows for every new order in ikas
+  url: https://zapier.com/apps/google-sheets/integrations/ikas/1637144/create-new-google-sheets-rows-for-every-new-order-in-ikas
+  apps:
+  - ikas
+  - google-sheets
+- title: Create new Notion database items for each new order in ikas
+  url: https://zapier.com/apps/ikas/integrations/notion/1643869/create-new-notion-database-items-for-each-new-order-in-ikas
+  apps:
+  - ikas
+  - notion
+- title: Create spreadsheets in Google Sheets for new orders in ikas
+  url: https://zapier.com/apps/google-sheets/integrations/ikas/255597367/create-spreadsheets-in-google-sheets-for-new-orders-in-ikas
+  apps:
+  - ikas
+  - google-sheets
+template_total: 25
