@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/discord/integrations/ikas/1280610/create-discord-channel-messages-for-new-ikas-orders-to-streamline-notifications
   template: https://zapier.com/apps/discord/integrations/ikas/1280610/create-discord-channel-messages-for-new-ikas-orders-to-streamline-notifications
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ikas-ikas-teknoloji-as-send-sms-notifications-for-new-products-in-ikas-using-netgsm
@@ -28,6 +29,7 @@
   evidence: https://zapier.com/apps/ikas/integrations/netgsm/1308077/send-sms-notifications-for-new-products-in-ikas-using-netgsm
   template: https://zapier.com/apps/ikas/integrations/netgsm/1308077/send-sms-notifications-for-new-products-in-ikas-using-netgsm
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ikas-ikas-teknoloji-as-create-google-sheets-rows-for-new-ikas-customers
@@ -42,6 +44,7 @@
   evidence: https://zapier.com/apps/google-sheets/integrations/ikas/1627338/create-google-sheets-rows-for-new-ikas-customers
   template: https://zapier.com/apps/google-sheets/integrations/ikas/1627338/create-google-sheets-rows-for-new-ikas-customers
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ikas-ikas-teknoloji-as-create-new-google-sheets-rows-for-every-new-order-in-ikas
@@ -56,6 +59,7 @@
   evidence: https://zapier.com/apps/google-sheets/integrations/ikas/1637144/create-new-google-sheets-rows-for-every-new-order-in-ikas
   template: https://zapier.com/apps/google-sheets/integrations/ikas/1637144/create-new-google-sheets-rows-for-every-new-order-in-ikas
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ikas-ikas-teknoloji-as-create-spreadsheets-in-google-sheets-for-new-orders-in-ikas
@@ -70,190 +74,7 @@
   evidence: https://zapier.com/apps/google-sheets/integrations/ikas/255597367/create-spreadsheets-in-google-sheets-for-new-orders-in-ikas
   template: https://zapier.com/apps/google-sheets/integrations/ikas/255597367/create-spreadsheets-in-google-sheets-for-new-orders-in-ikas
   source: template
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-mailgraf
-  label: MailGraf
-  partner_name: MailGraf
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/mailgraf
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-clickup
-  label: ClickUp
-  partner: clickup
-  partner_name: ClickUp
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/clickup
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-google-drive
-  label: Google Drive
-  partner: google-drive
-  partner_name: Google Drive
-  category: File Management & Storage
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/google-drive
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-klaviyo
-  label: Klaviyo
-  partner: klaviyo
-  partner_name: Klaviyo
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/klaviyo
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-kommo
-  label: Kommo
-  partner_name: Kommo
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/kommo
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-popupsmart
-  label: Popupsmart
-  partner_name: Popupsmart
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/popupsmart
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-facebook-lead-ads
-  label: Facebook Lead Ads
-  partner: facebook-lead-ads
-  partner_name: Facebook Lead Ads
-  category: Ads & Conversion
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/facebook-lead-ads
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-microsoft-excel
-  label: Microsoft Excel
-  partner_name: Microsoft Excel
-  category: Microsoft
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/excel
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-google-ai-studio-gemini
-  label: Google AI Studio (Gemini)
-  partner_name: Google AI Studio (Gemini)
-  category: AI Models
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/google-ai-studio
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-trustpilot
-  label: Trustpilot
-  partner: trustpilot
-  partner_name: Trustpilot
-  category: Reviews
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/trustpilot
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-odoo-crm
-  label: Odoo CRM
-  partner: odoo
-  partner_name: Odoo CRM
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/odoo
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-hotjar
-  label: Hotjar
-  partner: hotjar
-  partner_name: Hotjar
-  category: Analytics
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/hotjar
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-wp-all-export-pro
-  label: WP All Export Pro
-  partner_name: WP All Export Pro
-  category: Website Builders
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/wp-all-export-pro
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-katana
-  label: Katana
-  partner: katana
-  partner_name: Katana
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/katana-mrp
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-karlia
-  label: Karlia
-  partner_name: Karlia
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/karlia
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ikas-ikas-teknoloji-as-wats
-  label: WATS
-  partner_name: WATS
-  category: Analytics
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ikas/integrations/wats
-  source: edge
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ikas-ikas-teknoloji-as-zapier
@@ -280,4 +101,204 @@
     beta: false
     builder: unknown (not in the directory record)
   status: not-a-workflow
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-mailgraf
+  label: MailGraf
+  partner_name: MailGraf
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/mailgraf
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-clickup
+  label: ClickUp
+  partner: clickup
+  partner_name: ClickUp
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/clickup
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-google-drive
+  label: Google Drive
+  partner: google-drive
+  partner_name: Google Drive
+  category: File Management & Storage
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/google-drive
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-klaviyo
+  label: Klaviyo
+  partner: klaviyo
+  partner_name: Klaviyo
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/klaviyo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-kommo
+  label: Kommo
+  partner_name: Kommo
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/kommo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-popupsmart
+  label: Popupsmart
+  partner_name: Popupsmart
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/popupsmart
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-facebook-lead-ads
+  label: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_name: Facebook Lead Ads
+  category: Ads & Conversion
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/facebook-lead-ads
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-microsoft-excel
+  label: Microsoft Excel
+  partner_name: Microsoft Excel
+  category: Microsoft
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/excel
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-google-ai-studio-gemini
+  label: Google AI Studio (Gemini)
+  partner_name: Google AI Studio (Gemini)
+  category: AI Models
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/google-ai-studio
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-trustpilot
+  label: Trustpilot
+  partner: trustpilot
+  partner_name: Trustpilot
+  category: Reviews
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/trustpilot
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-odoo-crm
+  label: Odoo CRM
+  partner: odoo
+  partner_name: Odoo CRM
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/odoo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-hotjar
+  label: Hotjar
+  partner: hotjar
+  partner_name: Hotjar
+  category: Analytics
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/hotjar
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-wp-all-export-pro
+  label: WP All Export Pro
+  partner_name: WP All Export Pro
+  category: Website Builders
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/wp-all-export-pro
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-katana
+  label: Katana
+  partner: katana
+  partner_name: Katana
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/katana-mrp
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-karlia
+  label: Karlia
+  partner_name: Karlia
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/karlia
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ikas-ikas-teknoloji-as-wats
+  label: WATS
+  partner_name: WATS
+  category: Analytics
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ikas/integrations/wats
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
   arazzo: null
